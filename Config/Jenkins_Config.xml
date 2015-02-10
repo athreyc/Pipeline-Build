@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>1.597</version>
+  <numExecutors>1</numExecutors>
+  <mode>EXCLUSIVE</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.FullControlOnceLoggedInAuthorizationStrategy"/>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>true</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks>
+    <jdk>
+      <name>Oracle JDK 7</name>
+      <home>/usr/lib/jvm/java-7-oracle/</home>
+      <properties/>
+    </jdk>
+  </jdks>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds>
+    <hudson.plugins.ec2.EC2Cloud plugin="ec2@1.26">
+      <name>ec2-us-east-1</name>
+      <useInstanceProfileForCredentials>false</useInstanceProfileForCredentials>
+      <accessId>AKIAISUWDKUJOX5TGMKQ</accessId>
+      <secretKey>cDq/TAsBexyq6JsZJJTFLJLwYajgfgvXBRee0HCwIT62X7ZVLvkB24JEGEX1fu+54UvWAXdZlfO7wJNe2LynGw==</secretKey>
+      <privateKey>
+        <privateKey>+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</privateKey>
+      </privateKey>
+      <instanceCap>2147483647</instanceCap>
+      <templates>
+        <hudson.plugins.ec2.SlaveTemplate>
+          <ami>ami-84562dec</ami>
+          <description>Slave1</description>
+          <zone>us-east-1b</zone>
+          <securityGroups>launch-wizard-1</securityGroups>
+          <remoteFS>/home/ubuntu</remoteFS>
+          <type>T1Micro</type>
+          <labels>SlavesCluster</labels>
+          <mode>EXCLUSIVE</mode>
+          <initScript></initScript>
+          <tmpDir></tmpDir>
+          <userData></userData>
+          <numExecutors>1</numExecutors>
+          <remoteAdmin>ubuntu</remoteAdmin>
+          <jvmopts></jvmopts>
+          <subnetId>subnet-820ddda9</subnetId>
+          <idleTerminationMinutes>45</idleTerminationMinutes>
+          <iamInstanceProfile></iamInstanceProfile>
+          <useEphemeralDevices>false</useEphemeralDevices>
+          <customDeviceMapping></customDeviceMapping>
+          <instanceCap>2147483647</instanceCap>
+          <stopOnTerminate>true</stopOnTerminate>
+          <tags>
+            <hudson.plugins.ec2.EC2Tag>
+              <name>Name</name>
+              <value>Slave1</value>
+            </hudson.plugins.ec2.EC2Tag>
+          </tags>
+          <usePrivateDnsName>false</usePrivateDnsName>
+          <associatePublicIp>false</associatePublicIp>
+          <useDedicatedTenancy>false</useDedicatedTenancy>
+          <amiType class="hudson.plugins.ec2.UnixData">
+            <rootCommandPrefix>sudo</rootCommandPrefix>
+            <sshPort>22</sshPort>
+          </amiType>
+          <launchTimeout>2147483647</launchTimeout>
+        </hudson.plugins.ec2.SlaveTemplate>
+        <hudson.plugins.ec2.SlaveTemplate>
+          <ami>ami-84562dec</ami>
+          <description>Slave2</description>
+          <zone>us-east-1b</zone>
+          <securityGroups></securityGroups>
+          <remoteFS>/home/ubuntu</remoteFS>
+          <type>T1Micro</type>
+          <labels>SlavesCluster</labels>
+          <mode>EXCLUSIVE</mode>
+          <initScript>sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java7-installer maven git-core</initScript>
+          <tmpDir></tmpDir>
+          <userData></userData>
+          <numExecutors>1</numExecutors>
+          <remoteAdmin>ubuntu</remoteAdmin>
+          <jvmopts></jvmopts>
+          <subnetId></subnetId>
+          <idleTerminationMinutes>45</idleTerminationMinutes>
+          <iamInstanceProfile></iamInstanceProfile>
+          <useEphemeralDevices>false</useEphemeralDevices>
+          <customDeviceMapping></customDeviceMapping>
+          <instanceCap>2147483647</instanceCap>
+          <stopOnTerminate>false</stopOnTerminate>
+          <usePrivateDnsName>false</usePrivateDnsName>
+          <associatePublicIp>false</associatePublicIp>
+          <useDedicatedTenancy>false</useDedicatedTenancy>
+          <amiType class="hudson.plugins.ec2.UnixData">
+            <rootCommandPrefix>sudo</rootCommandPrefix>
+            <sshPort>22</sshPort>
+          </amiType>
+          <launchTimeout>2147483647</launchTimeout>
+        </hudson.plugins.ec2.SlaveTemplate>
+      </templates>
+      <region>us-east-1</region>
+    </hudson.plugins.ec2.EC2Cloud>
+  </clouds>
+  <slaves>
+    <hudson.plugins.ec2.EC2Slave plugin="ec2@1.26">
+      <name>Slave1 (i-953a7464)</name>
+      <description></description>
+      <remoteFS>/home/ubuntu</remoteFS>
+      <numExecutors>1</numExecutors>
+      <mode>EXCLUSIVE</mode>
+      <retentionStrategy class="hudson.plugins.ec2.EC2RetentionStrategy">
+        <idleTerminationMinutes>45</idleTerminationMinutes>
+      </retentionStrategy>
+      <launcher class="hudson.plugins.ec2.ssh.EC2UnixLauncher">
+        <FAILED>-1</FAILED>
+        <SAMEUSER>0</SAMEUSER>
+        <RECONNECT>-2</RECONNECT>
+      </launcher>
+      <label>SlavesCluster</label>
+      <nodeProperties/>
+      <userId>arun</userId>
+      <instanceId>i-953a7464</instanceId>
+      <initScript></initScript>
+      <tmpDir></tmpDir>
+      <remoteAdmin>ubuntu</remoteAdmin>
+      <jvmopts></jvmopts>
+      <stopOnTerminate>true</stopOnTerminate>
+      <idleTerminationMinutes>45</idleTerminationMinutes>
+      <usePrivateDnsName>false</usePrivateDnsName>
+      <useDedicatedTenancy>false</useDedicatedTenancy>
+      <tags class="linked-list">
+        <hudson.plugins.ec2.EC2Tag>
+          <name>jenkins_slave_type</name>
+          <value>demand</value>
+        </hudson.plugins.ec2.EC2Tag>
+        <hudson.plugins.ec2.EC2Tag>
+          <name>Name</name>
+          <value>Slave1</value>
+        </hudson.plugins.ec2.EC2Tag>
+      </tags>
+      <cloudName>ec2-us-east-1</cloudName>
+      <amiType class="hudson.plugins.ec2.UnixData">
+        <rootCommandPrefix>sudo</rootCommandPrefix>
+        <sshPort>22</sshPort>
+      </amiType>
+      <launchTimeout>2147483647</launchTimeout>
+    </hudson.plugins.ec2.EC2Slave>
+  </slaves>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>All</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>All</primaryView>
+  <slaveAgentPort>0</slaveAgentPort>
+  <label>SlavesCluster</label>
+  <nodeProperties/>
+  <globalNodeProperties/>
+  <noUsageStatistics>true</noUsageStatistics>
+</hudson>
