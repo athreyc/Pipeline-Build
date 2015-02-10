@@ -5,7 +5,10 @@
 
 ##Build
 
+
 &nbsp;&nbsp;&nbsp;&nbsp;The following sub-sections describe how to create and configure the build server and the development environment.
+
+Note: nd4j project has been used as the application  
 
 ###1. Environment and tools setup:
 
